@@ -1,21 +1,33 @@
-# A Multi-Indicator Coupled Spatio-Temporal Latent Factorization of Tensors Model for Signal Recovery in Wireless Sensor Networks
+# A Spatiotemporally-Regularized Latent Factorization of Tensors Model for Representation Learning of Nonstandard Environmental Sensing Data
 
+Wireless Sensor Networks (WSNs) are an essential component of intelligent environmental monitoring systems. However, the sensing data collected by WSNs are often **nonstandard** due to issues such as missing values, sudden sensor failures, or wireless signal dropouts.  
 
+To tackle this challenge, we propose **SR-LFT (Spatiotemporally-Regularized Latent Factorization of Tensors)**, a novel representation learning model designed for nonstandard environmental sensing data.
 
-## 📌 Introduction
+---
 
-Wireless Sensor Networks (WSNs) have gained increasing attention as a key enabler of intelligent sensing across diverse applications. However, in practical deployments, WSNs often encounter missing data caused by various internal or external factors, such as sudden sensor failures or intentional sabotage.
+## 🚀 Key Ideas
+1. **Latent Factorization of Tensors (LFT) Framework**  
+   - Jointly models multiple sensing indicators.  
+   - Introduces a *learnable indicator-loss weight* to adaptively balance the contribution of each indicator during training.  
 
-Low-rank matrix approximation (LRMA) methods are widely adopted to recover missing data in WSNs. Nevertheless, existing LRMA-based approaches focus on modeling single indicators, neglecting the inherent correlations among multiple indicators — thereby limiting recovery accuracy.
+2. **Spatiotemporal Regularization**  
+   - Explicitly incorporates both **spatial structures** and **temporal patterns** as regularization constraints.  
+   - Enhances the model’s ability to leverage dependencies across multiple sensing indicators.  
 
-To address this issue, this paper proposes a **M**ulti-**I**ndicator coupled **S**patio-**T**emporal **L**atent **F**actorization of **T**ensors (**MIST-LFT**) model. Its core innovations are:
+---
 
-1. A tensor latent factorization framework that **couples multi-indicator data**, incorporating a learnable weighted *L₂-norm* to adaptively balance each indicator’s contribution during training.
-2. Explicit modeling of **spatio-temporal correlations** via regularization constraints, enabling the model to capture both spatial topology and temporal dynamics of WSNs.
+## ✨ Contributions
+- A new tensor-based latent factorization model with spatiotemporal regularization.  
+- Adaptive weighting mechanism for heterogeneous sensing indicators.  
+- Significant improvements in representation learning for nonstandard WSN data.  
 
-As a result, MIST-LFT effectively exploits **multi-indicator coupling** and **spatio-temporal structure**, achieving significantly higher recovery accuracy — especially under high missing rates.
+---
 
-Extensive experiments on two real-world WSN datasets demonstrate that MIST-LFT consistently outperforms six state-of-the-art baselines.
+## 📊 Experimental Results
+We evaluate SR-LFT on **two real-world WSN datasets** with high missing rates.  
+- SR-LFT consistently and significantly outperforms **six state-of-the-art baselines**.  
+- Demonstrates strong robustness in handling missing values while preserving spatiotemporal correlations.  
 
 ---
 
