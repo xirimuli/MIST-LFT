@@ -2,7 +2,7 @@ package LFT.cn.edu.swu;
 
 import java.io.IOException;
 
-public class MIST_LFT extends InitTensor {
+public class SR_LFT extends InitTensor {
 
     public double yita = 0;
     public double lambda = 0, lambda2 = 0, lambda3 = 0;
@@ -222,11 +222,11 @@ public class MIST_LFT extends InitTensor {
             {
 
                 double k = 0.001;
-                MIST_LFT bn = new MIST_LFT(path + "BeijingAirQuality\\" + String.valueOf(k) + "_sample_rating\\train.txt",
+                SR_LFT bn = new SR_LFT(path + "BeijingAirQuality\\" + String.valueOf(k) + "_sample_rating\\train.txt",
                         path + "BeijingAirQuality\\" + String.valueOf(k) + "_sample_rating\\test.txt", "::");
                 //configuration
                 bn.rank = 20;
-                bn.lambda = 0.0001 * 20;//0.002 “‘œ¬
+                bn.lambda = 0.0001 * 20;//0.002 √í√î√è√Ç
                 bn.lambda2 = 0.0001 * 20;
                 bn.lambda3 = 0.0001 * 10;
                 bn.lambda_b = 0.01;
